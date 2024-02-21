@@ -3,4 +3,23 @@
   <groupId>RodrigoIbanezGarciaDESINTarea6</groupId>
   <artifactId>Rodrigo_Ibanez_Garcia_DESIN_Tarea6</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>libs/</classpathPrefix>
+							<mainClass>
+								paquete.Main
+							</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
